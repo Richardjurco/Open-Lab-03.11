@@ -1,12 +1,17 @@
-﻿using System;
+using System;
 
-namespace Open_Lab_03._11
+namespace Open_Lab_04._02
 {
-    public class Checker
+    public class Doubler
     {
-        public bool IsPalindrome(string str)
+        public string DoubleChar(string original)
         {
-            throw new NotImplementedException();
-        } 
+            string result = string.Empty;
+             for (int a = 0;a < original.Length;a++)
+            {
+                result = result + original[a] + original[a];
+            }return result;
+            
+        }
     }
 }
